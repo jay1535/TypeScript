@@ -45,3 +45,15 @@ type UserInputSanitizedString = string;
  
 //  Can still be re-assigned with a string though
 // userInput = "new input";
+
+
+type User = {
+    readonly _id : string, //Cannot be updated by the user
+    name : string,
+    email : string
+}
+let myUser : User = {
+    _id : "12345",
+    name : "John Doe",
+    email : "habbu@1234"
+}
