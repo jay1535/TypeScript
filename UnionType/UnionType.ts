@@ -48,3 +48,7 @@ function printIds(id: number | string) {
     console.log(id);
   }
 }
+
+//For Arrays with different types, you can use Array.isArray to narrow the type:
+
+const data: (number | string)[] = ["Alice", "Bob", 3];
