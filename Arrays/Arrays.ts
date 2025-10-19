@@ -7,3 +7,8 @@ this syntax works for any type (e.g. string[] is an array of strings, and so on)
 
 const superHeroes : string[] = [];
 superHeroes.push("Spiderman");
+
+const MLModels : number[][] = [
+    [1, 2, 3],
+    [4, 5, 6]
+]
