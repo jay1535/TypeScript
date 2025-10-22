@@ -10,7 +10,8 @@
 
 // const jayant = new User("Jayant@gmail.com", "Jayant");
 class User{
-    private _courseCount = 1
+    // private _courseCount = 1
+    protected _courseCount = 1
     private readonly city : string = ""
     constructor(
         public email : string,
@@ -33,6 +34,11 @@ class User{
 
     }
 };
-
+class subUser extends User{
+    isFamily : boolean = true;
+    changeCourseCount(){
+        this._courseCount  =  4
+    }
+}
 const jayant = new User("Jayant@gmail.com", "Jayant");
 // jayant.city = "Jaipur"; Cannot Access ---> Priavte
