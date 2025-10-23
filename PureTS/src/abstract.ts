@@ -1,16 +1,20 @@
-abstract class TakePhoto{
+abstract class TakePhoto {
     constructor(
-        public cameraMode : string,
-        public filter : string
-    ){
+        public cameraMode: string,
+        public filter: string
+    ) {
 
     }
 }
 
 // const Jayant = new TakePhoto("test", "test");
 
-class Insta extends TakePhoto{
-
+class Insta extends TakePhoto {
+    constructor(public cameraMode: string,
+        public filter: string
+    ) {
+        super(cameraMode, filter)
+    }
 }
 
 const Jayant = new Insta("test", "test");
