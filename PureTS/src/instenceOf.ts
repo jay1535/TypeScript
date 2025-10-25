@@ -40,4 +40,10 @@ Discriminated unions
 Most of the examples we’ve looked at so far have focused around narrowing single variables with simple types like string, boolean, and number. While this is common, most of the time in JavaScript we’ll be dealing with slightly more complex structures.
 
 For some motivation, let’s imagine we’re trying to encode shapes like circles and squares. Circles keep track of their radiuses and squares keep track of their side lengths. We’ll use a field called kind to tell which shape we’re dealing with. Here’s a first attempt at defining Shape.
-*/
+*/ 
+
+interface Shape {
+  kind: "circle" | "square";
+  radius?: number;
+  sideLength?: number;
+}
